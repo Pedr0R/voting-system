@@ -2,7 +2,7 @@
 
 Estou tentando recriar o sistema de votação das lives do Baiano na Twitch.
 
-* É um sistema de palpite interativo para streams onde:
+## É um sistema de palpite interativo para streams onde:
 - dentre N opções cada viewer da twitch pode votar na opção desejada
 - recebe dados do chat da twitch para o sistema de votação
 - ao final do tempo determinado o vencedor é revelado
