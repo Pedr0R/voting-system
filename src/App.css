@@ -2,24 +2,12 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +16,57 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-votacao {
+  background-color: black;
+  height: 550px;
+  width: 670px;
+  display:flex;
+  margin: 30px;
+}
+
+.votation-option {
+  margin: 25px;
+  background-color: rgb(43, 13, 99);
+  height: 500px;
+  width: 300px;
+}
+
+.scoreboard-container {
+  width: 1000px;
+  background-color:rgb(16, 5, 36);
+  display: grid;
+  gap: 50px;
+  align-content: center;
+  grid-auto-columns: auto;
+}
+
+.team1 {
+  grid-column-start: 1;
+}
+
+.scoreboard {
+  margin-top: 30px;
+  height: 50px;
+  width: 600px;
+  background-color: grey;
+  display: flex;
+  grid-column-start: 2;
+}
+
+.team2 {
+  grid-column-start: 3;
+}
+
+.vote-button {
+  height: 50px;
+  width: 100px;
+  background-color:grey;
+  border: none;
+  font-weight: bold;
+  color:white;
+  transition-duration: 0.2s;
+}
+
+.vote-button:hover {
+  background-color: rgb(128, 0, 0);
 }

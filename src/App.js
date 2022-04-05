@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const[votos1, setCount] = useState(0)
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Voting System</h1>
+        <div className="container-votacao">
+          <div className="votation-option">
+            <p>{votos1}</p>
+            <button className="vote-button1" onClick={setCount(state => state + 1)}>VOTE</button>
+          </div>
+          <div className="votation-option">
+            <p>#</p>
+            <button className="vote-button2" >VOTE</button>
+          </div>
+        </div>
+        <div className="scoreboard-container">
+          <h2 className="team1">Vermelho</h2>
+          <div className="scoreboard">
+          </div>
+          <h2 className="team2">Azul</h2>
+        </div>
+        
       </header>
     </div>
   );
