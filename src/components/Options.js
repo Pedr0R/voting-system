@@ -11,7 +11,7 @@ function Options() {
   return (
   <>
     <div className="container-votacao">
-      <div className="votation-option">
+      <div className="votation-option1">
         <p>team1</p>
         <button 
           type="button"
@@ -21,7 +21,7 @@ function Options() {
           onClick={() => setAVotes(aVotes + 1)}>VOTE</button>
 
       </div>
-      <div className="votation-option">
+      <div className="votation-option2">
         <p>team2</p>
         <button type="button"
           id="vote-button2"
@@ -32,11 +32,15 @@ function Options() {
       </div>
     </div>
     <div className="scoreboard-container">
+      <div className="bar">
+        <div className="theBar"></div>
+      </div>
       <div className="scoreboard">
         <label className="team1">team1</label>
+        <comment className="teamVotes">({aVotes})</comment>
         <label >{aPercent}%</label>
-        <label></label>
         <label>{bPercent}%</label>
+        <comment className="teamVotes">({bVotes})</comment>
         <label className="team2">team2</label>
       </div>
     </div>
