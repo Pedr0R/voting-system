@@ -48,9 +48,18 @@
   margin-top: 30px;
   height: 50px;
   width: 600px;
-  background-color: grey;
   display: flex;
   grid-column-start: 2;
+}
+
+.scoreboard label {
+  width: 500px;
+}
+
+.scoreboard #team1 {
+  font-weight: bold;
+  border: #282c34;
+  color:white
 }
 
 .team2 {
