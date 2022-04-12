@@ -1,6 +1,6 @@
-# Voting system for twitch chat
+# Voting system 
 
-Estou tentando recriar o sistema de votação das lives do Baiano na Twitch.
+Estou tentando recriar o sistema de votação das transmissão do CBLOL.
 
 ## É um sistema de palpite interativo para streams onde:
 - dentre N opções cada viewer da twitch pode votar na opção desejada
