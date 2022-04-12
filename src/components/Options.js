@@ -31,10 +31,7 @@ function Options() {
 
       </div>
     </div>
-    <div className="scoreboard-container">
-      <div className="bar">
-        <div className="theBar"></div>
-      </div>
+    <div className="scoreboard-container"> 
       <div className="scoreboard">
         <label className="team1">team1</label>
         <comment className="teamVotes">({aVotes})</comment>
